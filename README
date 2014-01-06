@@ -23,3 +23,9 @@ m faulty nodes
 
 Output: 
 Value v agreed upon by the n-1 lieutenants
+
+
+Acknowledgments: 
+Lamport, Leslie; Robert Shostak, Marshall Pease - "The Byzantine Generals Problem": http://research.microsoft.com/en-us/um/people/lamport/pubs/byz.pdf
+Dr. Dobbs's site helped me understand the algorithms better in the times when the above paper got too tough: http://www.drdobbs.com/cpp/the-byzantine-generals-problem/206904396
+Tony Arcieri, for his awesome Celluloid actor framework for Ruby
