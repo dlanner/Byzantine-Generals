@@ -18,7 +18,8 @@ LOGGER.info "Generals #{traitors.to_a.to_s} are traitors"
 Celluloid::Actor[:commander] = General.new 0, traitors.include?(0)
 
 NUM_LIEUTENANTS.times do |i|
-  Celluloid::Actor["general#{i+1}".to_sym] = General.new i+1, traitors.include?(i)
+  id = i+1
+  Celluloid::Actor["general#{id}".to_sym] = General.new id, traitors.include?(id)
 end
 
 values = Celluloid::Actor[:commander].oral_message OpenStruct.new( :value => 1, :chain => [] ), NUM_TRAITORS
