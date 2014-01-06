@@ -1,0 +1,25 @@
+Some thoughts:
+
+what do we want to test?
+the lieutenants should be able to agree upon a consensus
+
+unit tests for algms
+
+use OptionParser for CLI (e.g. --nodes / -n number of nodes, -m number-of-traitors, --output / -o for formatting as graph)
+TODO: visualize / graph: https://github.com/glejeune/Ruby-Graphviz
+
+OM(m) - Oral Message algorithm / method
+SM(m) - Signed Message algorithm / method
+
+advanced: OM(m,p) (not fully connected graph)
+
+
+OM(m)
+Setup:
+n nodes, 1 of which is the general, and the rest (n-1) of which are lieutenants
+
+Input:
+m faulty nodes
+
+Output: 
+Value v agreed upon by the n-1 lieutenants
