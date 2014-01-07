@@ -24,7 +24,7 @@ class General
     else
       # LOGGER.debug "recursive case OM(n-1)"
       # TODO: implement traitor strategy mixins (e.g. RandomTraitorStrategy, OppositeTraitorStrategy, etc.)
-      new_value = traitor? ? rand(2) : message.value
+      new_value = traitor? ? POSSIBLE_VALUES.sample : message.value
       new_message = OpenStruct.new( :value => new_value, :chain => message.chain + [ id ] )
       # LOGGER.debug "Sending message #{new_message.value}:#{new_message.chain.inspect}"
       NUM_LIEUTENANTS.times.map do |i|

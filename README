@@ -3,10 +3,10 @@ Some thoughts:
 what do we want to test?
 the lieutenants should be able to agree upon a consensus
 
-unit tests for algms
+TODO: unit tests for algms
 
-use OptionParser for CLI (e.g. --nodes / -n number of nodes, -m number-of-traitors, --output / -o for formatting as graph)
-TODO: visualize / graph: https://github.com/glejeune/Ruby-Graphviz
+TODO: OptionParser: --output / -o (for formatting as graph)
+NOTE: visualize / graph using: https://github.com/glejeune/Ruby-Graphviz
 
 OM(m) - Oral Message algorithm / method
 SM(m) - Signed Message algorithm / method
