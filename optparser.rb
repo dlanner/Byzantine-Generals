@@ -16,15 +16,15 @@ class Optparse
 
     opt_parser = OptionParser.new do |opts|
       opts.on("-n", "--num-nodes=N", Integer, "Total number of nodes/generals to create; defaults to 4") do |n|
-        options[:num_nodes] = n || default_num_nodes
+        options.num_nodes = n
       end
 
       opts.on("-m", "--num-traitors=M", Integer, "A subset of the n nodes, the number of faulty/traitor nodes/generals; defaults to 1") do |m|
-        options[:num_traitors] = m || default_num_traitors
+        options.num_traitors = m
       end
 
       opts.on("-i", "--initial-value=I", Integer, "The initial value given by the commander; defaults to 1") do |i|
-        options[:initial_value] = i || default_initial_value
+        options.initial_value = i
       end
 
     	opts.on_tail("-h", "--help", "Show this message") do
