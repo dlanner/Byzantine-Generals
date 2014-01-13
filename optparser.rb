@@ -1,12 +1,8 @@
 require 'optparse'
+require 'ostruct'
 
 class Optparse
-
-  #
-  # Return a structure describing the options.
-  #
   def self.parse(args)
-
     # The options specified on the command line will be collected in *options*.
     # We set default values here.
     options = OpenStruct.new
@@ -35,5 +31,5 @@ class Optparse
 
     opt_parser.parse!(args)
     options
-  end  # parse()
-end  # class Optparse
+  end
+end
